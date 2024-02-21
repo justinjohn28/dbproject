@@ -16,9 +16,14 @@ namespace dbproject
 {
     public partial class frmUserProfile : Form
     {
-        public frmUserProfile()
+        long iduser;
+        String loginname;
+        public frmUserProfile(long liduser, String lname)
         {
             InitializeComponent();
+
+            this.iduser = liduser;
+            this.loginname = lname;
 
             this.pkrBirthdate.Format = DateTimePickerFormat.Custom;
             this.pkrBirthdate.CustomFormat = Globals.gdefaultDateFormat;
