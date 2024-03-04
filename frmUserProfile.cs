@@ -91,8 +91,7 @@ namespace dbproject
 
             if (Globals.glOpenSqlConn())
             {
-                SqlCommand cmd = new SqlCommand("spGetUserProfile",
-                    Globals.sqlconn);
+                SqlCommand cmd = new SqlCommand("spGetUserProfile", Globals.sqlconn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@liduser", iduser);
 
@@ -308,6 +307,11 @@ namespace dbproject
         {
             ChangePasswordfrm.Dispose();
             ChangePasswordfrm = null;
+        }
+
+        private void cbxGender_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

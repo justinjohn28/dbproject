@@ -143,6 +143,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="database\mydb.bak" />
     <None Include="images\smallicons.zip" />
@@ -559,6 +560,9 @@
     <Content Include="images\X2.bmp" />
     <Content Include="images\X3.bmp" />
     <Content Include="images\xcalc.ico" />
+    <None Include="Resources\users4.bmp" />
+    <None Include="Resources\login2.bmp" />
+    <None Include="Resources\login21.bmp" />
     <Content Include="sandals.ico" />
   </ItemGroup>
   <ItemGroup />

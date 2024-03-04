@@ -158,6 +158,7 @@ namespace dbproject
             this.cbxGender.Name = "cbxGender";
             this.cbxGender.Size = new System.Drawing.Size(121, 24);
             this.cbxGender.TabIndex = 4;
+            this.cbxGender.SelectedIndexChanged += new System.EventHandler(this.cbxGender_SelectedIndexChanged);
             this.cbxGender.TextChanged += new System.EventHandler(this.pkrBirthdate_ValueChanged);
             this.cbxGender.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLoginName_KeyDown);
             // 
@@ -224,7 +225,6 @@ namespace dbproject
             // 
             this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefresh.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
             this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnRefresh.ImageKey = "refresh-icon-png-40262-Windows.ico";
             this.btnRefresh.Location = new System.Drawing.Point(329, 222);
